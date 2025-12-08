@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu, FiX, FiChevronDown, FiPhone } from 'react-icons/fi';
 import { Button } from '@/components/ui/button';
 
@@ -6,17 +7,28 @@ const navItems = [
   {
     label: 'For Students',
     hasDropdown: true,
-    items: ['Class 8-9', 'Class 10-12', 'Graduates'],
+    items: [
+      { label: 'Class 8-9', href: '/career-counselling-for-class-8-and-9' },
+      { label: 'Class 10-12', href: '#' },
+      { label: 'Graduates', href: '#' },
+    ],
   },
   {
     label: 'For Institutions',
     hasDropdown: true,
-    items: ['Schools', 'Colleges', 'Universities'],
+    items: [
+      { label: 'Schools', href: '#' },
+      { label: 'Colleges', href: '#' },
+      { label: 'Universities', href: '#' },
+    ],
   },
   {
     label: 'For Professionals',
     hasDropdown: true,
-    items: ['Career Coaches', 'Partner Program'],
+    items: [
+      { label: 'Career Coaches', href: '#' },
+      { label: 'Partner Program', href: '#' },
+    ],
   },
   { label: 'Resources', hasDropdown: false },
   { label: 'About Us', hasDropdown: false },
@@ -55,13 +67,13 @@ const Header = () => {
                 {item.hasDropdown && activeDropdown === item.label && (
                   <div className="absolute top-full left-0 mt-1 w-48 bg-card rounded-lg shadow-lg border border-border py-2 animate-fade-in">
                     {item.items?.map((subItem) => (
-                      <a
-                        key={subItem}
-                        href="#"
+                      <Link
+                        key={subItem.label}
+                        to={subItem.href}
                         className="block px-4 py-2 text-sm text-muted-foreground hover:text-accent hover:bg-muted/50 transition-colors"
                       >
-                        {subItem}
-                      </a>
+                        {subItem.label}
+                      </Link>
                     ))}
                   </div>
                 )}
