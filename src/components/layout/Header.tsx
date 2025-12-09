@@ -18,7 +18,7 @@ const navItems = [
     hasDropdown: true,
     items: [
       { label: 'Schools', href: '#' },
-      { label: 'Colleges', href: '#' },
+      { label: 'MUN Training', href: '/mun-training-program' },
       { label: 'Universities', href: '#' },
     ],
   },
