@@ -26,7 +26,7 @@ const navItems = [
     label: 'For Professionals',
     hasDropdown: true,
     items: [
-      { label: 'Career Coaches', href: '#' },
+      { label: 'ICCC Certification', href: '/iccc' },
       { label: 'Partner Program', href: '#' },
     ],
   },
