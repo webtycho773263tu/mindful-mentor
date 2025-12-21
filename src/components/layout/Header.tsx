@@ -27,7 +27,7 @@ const navItems = [
     hasDropdown: true,
     items: [
       { label: 'ICCC Certification', href: '/iccc' },
-      { label: 'Partner Program', href: '#' },
+      { label: 'Partner Program', href: '/partner-program' },
     ],
   },
   { label: 'Resources', hasDropdown: false },
