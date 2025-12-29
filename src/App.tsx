@@ -9,6 +9,8 @@ import MUNTraining from "./pages/MUNTraining";
 import ICCC from "./pages/ICCC";
 import PartnerProgram from "./pages/PartnerProgram";
 import Graduates from "./pages/Graduates";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/iccc" element={<ICCC />} />
           <Route path="/partner-program" element={<PartnerProgram />} />
           <Route path="/career-counselling-for-graduates" element={<Graduates />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
