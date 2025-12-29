@@ -10,7 +10,7 @@ const navItems = [
     items: [
       { label: 'Class 8-9', href: '/career-counselling-for-class-8-and-9' },
       { label: 'Class 10-12', href: '#' },
-      { label: 'Graduates', href: '#' },
+      { label: 'Graduates', href: '/career-counselling-for-graduates' },
     ],
   },
   {
