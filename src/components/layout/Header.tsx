@@ -90,12 +90,16 @@ const Header = () => {
               <FiPhone className="w-4 h-4" />
               <span>+91 12345 67890</span>
             </a>
-            <Button variant="outline" size="sm">
-              Login
-            </Button>
-            <Button variant="accent" size="sm">
-              Get Started
-            </Button>
+            <Link to="/login">
+              <Button variant="outline" size="sm">
+                Login
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button variant="accent" size="sm">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -121,12 +125,16 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 mt-4 px-4">
-                <Button variant="outline" className="w-full">
-                  Login
-                </Button>
-                <Button variant="accent" className="w-full">
-                  Get Started
-                </Button>
+                <Link to="/login">
+                  <Button variant="outline" className="w-full">
+                    Login
+                  </Button>
+                </Link>
+                <Link to="/register">
+                  <Button variant="accent" className="w-full">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>
