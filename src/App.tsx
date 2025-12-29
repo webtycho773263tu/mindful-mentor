@@ -8,6 +8,7 @@ import Class89 from "./pages/Class89";
 import MUNTraining from "./pages/MUNTraining";
 import ICCC from "./pages/ICCC";
 import PartnerProgram from "./pages/PartnerProgram";
+import Graduates from "./pages/Graduates";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/mun-training-program" element={<MUNTraining />} />
           <Route path="/iccc" element={<ICCC />} />
           <Route path="/partner-program" element={<PartnerProgram />} />
+          <Route path="/career-counselling-for-graduates" element={<Graduates />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
